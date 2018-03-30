@@ -1,0 +1,112 @@
+<!-- Dylan Grandjean - March 8th, 2017 -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>h1-h6 Documentation</title>
+		<link href="html_css_docstyle.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<!-- Banner at top of the page. -->
+		<header>
+			<a href="main.html">
+				<section id='banner'>
+					<h1 id='bannerTitle'>HTML5/CSS3 Documentation</h1>
+				</section>
+			</a>
+		</header>
+		<!-- Menu and drop down menus within navigation bar.-->
+		<nav>
+			<form>
+    				<button class="dropbtn" formaction="main.html">Home</button>
+				<section class="dropdown">
+				<!-- Display content of HTML dropdown button -->
+ 				 <button class="dropbtn" formaction="htmldocs.html">HTML</button>
+  					<section class="dropdown-content">
+    						<a href="txtfrmtdocs.html">&lt;Text Formatting&gt;</a>
+    						<a href="semelemdocs.html">&lt;Semantic Elements&gt;</a>
+    						<a href="listdocs.html">&lt;List Elements&gt;</a>
+    						<hr>
+    						<a href="buttondocs.html">&lt;button&gt;</a>
+    						<a href="h1toh6docs.html">&lt;h1-h6&gt;</a>
+    						<a href="imgdocs.html">&lt;img&gt;</a>
+  					</section>
+				</section>
+				<section class="dropdown">
+				<!-- Display content of CSS dropdown button -->
+ 				  <button class="dropbtn" formaction="cssdocs.html">CSS</button>
+  					<section class="dropdown-content">
+    						<a href="colordocs.html">color</a>
+   						 <a href="borderdocs.html">border</a>
+    						<a href="backgrounddocs.html">background</a>
+  					</section>
+				</section>
+				<button class="dropbtn" formaction="mailto:dgrandjean@my.ccri.edu">Contact Us</button>
+			</form>
+		</nav>
+		<!-- Main section of the page where all the relevant information is contained. -->
+		<main>
+			<!-- Page description -->
+			<h2 id='title'>The &lt;h1-h6&gt; Element</h2>
+			<p>
+				The heading tags format the font by changing the fonts' weight and size. There are six different
+				heading tags, &lt;h1&gt; defines the most important heading, and &lt;h6&gt; defines 
+				the least important one.
+			</p>
+			<!-- First example -->
+			<p class='description'>
+				Here is an example of each heading:
+			</p>
+			<!-- Example table -->
+			<table>
+				<tr>
+					<th>Code</th>
+					<th>Result</th>
+				</tr>
+				<tr>
+					<td>
+						<!-- Display HTML code to users -->
+						<section class="code">
+							<code>
+								&lt;html&gt;<br>
+								&lt;body&gt;<br>
+								&lt;h1&gt;This is an &lt;h1&gt; heading.&lt;/h1&gt;<br>
+								&lt;h2&gt;This is an &lt;h2&gt; heading.&lt;/h2&gt;<br>
+								&lt;h3&gt;This is an &lt;h3&gt; heading.&lt;/h3&gt;<br>
+								&lt;h4&gt;This is an &lt;h4&gt; heading.&lt;/h4&gt;<br>
+								&lt;h5&gt;This is an &lt;h5&gt; heading.&lt;/h5&gt;<br>
+								&lt;h6&gt;This is an &lt;h6&gt; heading.&lt;/h6&gt;<br>
+								&lt;/body&gt;<br>
+								&lt;/html&gt;
+							</code>
+						</section>	
+					</td>
+					<td>
+						<!-- Display actual code to screen as example -->
+						<section class="code">
+							<h1 id="sectionHeader">This is an &lt;h1&gt; heading.</h1>
+							<h2>This is an &lt;h2&gt; heading.</h2>
+							<h3>This is an &lt;h3&gt; heading.</h3>
+							<h4>This is an &lt;h4&gt; heading.</h4>
+							<h5>This is an &lt;h5&gt; heading.</h5>
+							<h6>This is an &lt;h6&gt; heading.</h6>
+						</section>
+					</td>
+				</tr>
+			</table>
+			<!-- Link to the official website -->
+			<p>
+				For more information, visit <a target="_blank" href="https://www.w3schools.com/tags/tag_hn.asp">W3Schools.com</a>
+			</p>
+		</main>
+		<footer>
+			<!-- Author's name and link to college webpage -->
+			<p class='author'> &#x24B8; Dylan Grandjean. March 9th, 2017<br> </p>
+			<p class='college'>
+				<a href="http://www.ccri.edu">Community College of Rhode Island</a><br>
+				400 East Avenue, Warwick, Rhode Island 02886<br>
+				Telephone: <a href="http://ccri.edu/phone/college-depts.html">+1 (401) 825-1000</a>
+			</p>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,608 @@
+<!-- Dylan Grandjean - March 8th, 2017 -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Semantic Documentation</title>
+		<link href="html_css_docstyle.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<!-- Banner at top of the page. -->
+		<header>
+			<a href="main.html">
+				<section id='banner'>
+					<h1 id='bannerTitle'>HTML5/CSS3 Documentation</h1>
+				</section>
+			</a>
+		</header>
+		<!-- Menu and drop down menus within navigation bar.-->
+		<nav>
+			<form>
+    				<button class="dropbtn" formaction="main.html">Home</button>
+				<section class="dropdown">
+				<!-- Display content of HTML dropdown button -->
+ 				 <button class="dropbtn" formaction="htmldocs.html">HTML</button>
+  					<section class="dropdown-content">
+    						<a href="txtfrmtdocs.html">&lt;Text Formatting&gt;</a>
+    						<a href="semelemdocs.html">&lt;Semantic Elements&gt;</a>
+    						<a href="listdocs.html">&lt;List Elements&gt;</a>
+    						<hr>
+    						<a href="buttondocs.html">&lt;button&gt;</a>
+    						<a href="h1toh6docs.html">&lt;h1-h6&gt;</a>
+    						<a href="imgdocs.html">&lt;img&gt;</a>
+  					</section>
+				</section>
+				<section class="dropdown">
+				<!-- Display content of CSS dropdown button -->
+ 				  <button class="dropbtn" formaction="cssdocs.html">CSS</button>
+  					<section class="dropdown-content">
+    						<a href="colordocs.html">color</a>
+   						 <a href="borderdocs.html">border</a>
+    						<a href="backgrounddocs.html">background</a>
+  					</section>
+				</section>
+				<button class="dropbtn" formaction="mailto:dgrandjean@my.ccri.edu">Contact Us</button>
+			</form>
+		</nav>
+		<!-- Main section of the page where all the relevant information is contained. -->
+		<main>
+			<!-- Page description -->
+			<h2 id='title'>The Semantic Elements</h2>
+			<p>
+				Semantic elements within a document give clear definition of what the tag contains and describes its purpose to the developer and web browser.
+			</p>
+			<!-- Allows user to navigate to an element on this page. -->
+			<section id="idNav">
+				<a href="#articleTag">&lt;article&gt;</a> |
+				<a href="#asideTag">&lt;aside&gt;</a> |
+				<a href="#detailsTag">&lt;details&gt;</a> |
+				<a href="#figureTag">&lt;figure&gt;</a> |
+				<a href="#figcaptionTag">&lt;figcaption&gt;</a> |
+				<a href="#footerTag">&lt;footer&gt;</a> |
+				<a href="#headerTag">&lt;header&gt;</a> |
+				<a href="#mainTag">&lt;main&gt;</a> |
+				<a href="#navTag">&lt;nav&gt;</a> |
+				<a href="#sectionTag">&lt;section&gt;</a> |
+				<a href="#summaryTag">&lt;summary&gt;</a> |
+				<a href="#timeTag">&lt;time&gt;</a>
+				<hr>
+			</section>
+			<!-- <article> element-->
+			<a id="articleTag"><h3 class="tagTitle">The &lt;article&gt; Element</h3></a>
+			<p class='description'>
+				The article tag is often confused with the section tag. However, an article contains self-contained content which, when taken out
+				of context, will still make sense to the reader:
+			</p>
+			<!-- Example table -->
+			<table>
+				<tr>
+					<th>Code</th>
+					<th>Result</th>
+				</tr>
+				<tr>
+					<td>
+						<!-- Display HTML code to users -->
+						<section class="code">
+							<code>
+								&lt;html&gt;<br>
+								&lt;body&gt;<br>
+								&lt;article&gt;<br>
+								&lt;h1&gt;Definition&lt;/h1&gt;<br>
+								&lt;p&gt;1. a statement of the exact meaning of a word, especially in a dictionnary.&lt;/p&gt;<br>
+								&lt;/article&gt;<br>
+								&lt;/body&gt;<br>
+								&lt;/html&gt;
+							</code>
+						</section>	
+					</td>
+					<td>
+						<!-- Display actual code to screen as example -->
+						<section class="code">
+							<article>
+							<h1>Definition</h1>
+							<p>1. a statement of the exact meaning of a word, especially in a dictionnary.</p>
+							</article>
+						</section>
+					</td>
+				</tr>
+			</table>
+			<!-- <aside> element-->
+			<a id="asideTag"><h3 class="tagTitle">The &lt;aside&gt; Element</h3></a>
+			<p class='description'>
+				The aside tag is used to define content aside from the main content of the page. It does however need to be related to the topic on the page:
+			</p>
+			<!-- Example table -->
+			<table>
+				<tr>
+					<th>Code</th>
+					<th>Result</th>
+				</tr>
+				<tr>
+					<td>
+						<!-- Display HTML code to users -->
+						<section class="code">
+							<code>
+								&lt;html&gt;<br>
+								&lt;body&gt;<br>
+								&lt;p&gt;I study at CCRI.&lt;/p&gt;<br>
+								&lt;aside&gt;<br>
+								&lt;h4&gt;CCRI&lt;/h4&gt;<br>
+								&lt;p&gt;Stands for Community College of Rhode Island.&lt;/p&gt;<br>
+								&lt;/aside&gt;<br>
+								&lt;/body&gt;<br>
+								&lt;/html&gt;
+							</code>
+						</section>	
+					</td>
+					<td>
+						<!-- Display actual code to screen as example -->
+						<section class="code">
+							<p>I study at CCRI.</p>
+							<aside>
+							<h4>CCRI</h4>
+							<p>Stands for Community College of Rhode Island.</p>
+							</aside>
+						</section>
+					</td>
+				</tr>
+			</table>
+			<!-- <details> element-->
+			<a id="detailsTag"><h3 class="tagTitle">The &lt;details&gt; Element</h3></a>
+			<p class='description'>
+				The details tag allows the display of additional content which is hidden by default but can be shown if the user whishes to see it:
+			</p>
+			<!-- Example table -->
+			<table>
+				<tr>
+					<th>Code</th>
+					<th>Result</th>
+				</tr>
+				<tr>
+					<td>
+						<!-- Display HTML code to users -->
+						<section class="code">
+							<code>
+								&lt;html&gt;<br>
+								&lt;body&gt;<br>
+								&lt;details&gt;<br>
+								&lt;summary&gt;Click for more content&lt;/summary&gt;<br>
+								&lt;p&gt;Isn't this fun?&lt;/p&gt;<br>
+								&lt;/details&gt;<br>
+								&lt;/body&gt;<br>
+								&lt;/html&gt;
+							</code>
+						</section>	
+					</td>
+					<td>
+						<!-- Display actual code to screen as example -->
+						<section class="code">
+							<details>
+								<summary>Click for more content</summary>
+								<p>Isn't this fun?<p>
+							</details>
+						</section>
+					</td>
+				</tr>
+			</table>
+			<!-- <figure> element-->
+			<a id="figureTag"><h3 class="tagTitle">The &lt;figure&gt; Element</h3></a>
+			<p class='description'>
+				The figure tag is used to define self-contained content such as images, illustrations, diagrams, etc.. :
+			</p>
+			<!-- Example table -->
+			<table>
+				<tr>
+					<th>Code</th>
+					<th>Result</th>
+				</tr>
+				<tr>
+					<td>
+						<!-- Display HTML code to users -->
+						<section class="code">
+							<code>
+								&lt;html&gt;<br>
+								&lt;body&gt;<br>
+								&lt;p&gt;A flower, sometimes known as a bloom or blossom, is the reproductive structure found in
+								plants that are floral (plants of the division Magnoliophyta, also called angiosperms).&lt;/p&gt;<br>
+								&lt;figure&gt;<br>
+								&lt;img src="flowerImg.jpg" alt="Flower" width="100" height="100"&gt;<br>
+								&lt;/figure&gt;<br>
+								&lt;a href="https://en.wikipedia.org/wiki/Flower" target="_blank"&gt;Wikpedia Link&lt;/a&gt;<br>
+								&lt;/body&gt;<br>
+								&lt;/html&gt;
+							</code>
+						</section>	
+					</td>
+					<td>
+						<!-- Display actual code to screen as example -->
+						<section class="code">
+							<p>A flower, sometimes known as a bloom or blossom, is the reproductive structure found in
+							plants that are floral (plants of the division Magnoliophyta, also called angiosperms).</p>
+							<figure>
+							<img src="flowerImg.jpg" alt="Flower" width="100" height="100">
+							</figure>
+							<a href="https://en.wikipedia.org/wiki/Flower" target="_blank">Wikpedia Link</a>
+						</section>
+					</td>
+				</tr>
+			</table>
+			<!-- <figcaption> element-->
+			<a id="figcaptionTag"><h3 class="tagTitle">The &lt;figcaption&gt; Element</h3></a>
+			<p class='description'>
+				The figcaption tag is used within a figure tage in order to add a caption to the figure element:
+			</p>
+			<!-- Example table -->
+			<table>
+				<tr>
+					<th>Code</th>
+					<th>Result</th>
+				</tr>
+				<tr>
+					<td>
+						<!-- Display HTML code to users -->
+						<section class="code">
+							<code>
+								&lt;html&gt;<br>
+								&lt;body&gt;<br>
+								&lt;p&gt;A flower, sometimes known as a bloom or blossom, is the reproductive structure found in
+								plants that are floral (plants of the division Magnoliophyta, also called angiosperms).&lt;/p&gt;<br>
+								&lt;figure&gt;<br>
+								&lt;img src="flowerImg.jpg" alt="Flower" width="100" height="100"&gt;<br>
+								&lt;figcaption&gt;&lt;a href="https://en.wikipedia.org/wiki/Flower" target="_blank"&gt;Wikpedia Link&lt;/a&gt;&lt;/figcaption&gt;<br>
+								&lt;/figure&gt;<br>
+								&lt;/body&gt;<br>
+								&lt;/html&gt;
+							</code>
+						</section>	
+					</td>
+					<td>
+						<!-- Display actual code to screen as example -->
+						<section class="code">
+							<p>A flower, sometimes known as a bloom or blossom, is the reproductive structure found in
+							plants that are floral (plants of the division Magnoliophyta, also called angiosperms).</p>
+							<figure>
+							<img src="flowerImg.jpg" alt="Flower" width="100" height="100">
+							<figcaption><a href="https://en.wikipedia.org/wiki/Flower" target="_blank">Wikpedia Link</a></figcaption>
+							</figure>
+						</section>
+					</td>
+				</tr>
+			</table>
+			<!-- <footer> element-->
+			<a id="footerTag"><h3 class="tagTitle">The &lt;footer&gt; Element</h3></a>
+			<p class='description'>
+				The footer tag defines the footer of a document or a section. It is often used to store information such as copyrights, authorship, other documents
+				belonging to this website, etc.. :
+			</p>
+			<!-- Example table -->
+			<table>
+				<tr>
+					<th>Code</th>
+					<th>Result</th>
+				</tr>
+				<tr>
+					<td>
+						<!-- Display HTML code to users -->
+						<section class="code">
+							<code>
+								&lt;html&gt;<br>
+								&lt;body&gt;<br>
+								&lt;footer&gt;<br>
+								&lt;p&gt;&#9400; Web page written and design by Dylan Grandjean&lt;/p&gt;<br>
+								&lt;p&gt;Community College of Rhode Island&lt;/p&gt;<br>
+								&lt;/footer&gt;<br>
+								&lt;/body&gt;<br>
+								&lt;/html&gt;
+							</code>
+						</section>	
+					</td>
+					<td>
+						<!-- Display actual code to screen as example -->
+						<section class="code">
+							<footer>
+							<p>&#9400; Web page written and design by Dylan Grandjean</p>
+							<p>Community College of Rhode Island</p>
+							</footer>
+						</section>
+					</td>
+				</tr>
+			</table>
+			<!-- <header> element-->
+			<a id="headerTag"><h3 class="tagTitle">The &lt;header&gt; Element</h3></a>
+			<p class='description'>
+				The header tag defines a section used for introductory content or navigation links. It is placed at the beginning of a document
+				or section:
+			</p>
+			<!-- Example table -->
+			<table>
+				<tr>
+					<th>Code</th>
+					<th>Result</th>
+				</tr>
+				<tr>
+					<td>
+						<!-- Display HTML code to users -->
+						<section class="code">
+							<code>
+								&lt;html&gt;<br>
+								&lt;body&gt;<br>
+								&lt;header&gt;<br>
+								&lt;h1&gt;This is a title&lt;/h1&gt;<br>
+								&lt;p&gt;Here is some content within the header.&lt;/p&gt;<br>
+								&lt;/header&gt;<br>
+								&lt;p&gt;This content is outside of the header.&lt;/p&gt;<br>
+								&lt;/body&gt;<br>
+								&lt;/html&gt;
+							</code>
+						</section>	
+					</td>
+					<td>
+						<!-- Display actual code to screen as example -->
+						<section class="code">
+							<header>
+							<h1>This is a title</h1>
+							<p>Here is some content within the header.</p>
+							</header>
+							<p>This content is outside of the header.</p>
+						</section>
+					</td>
+				</tr>
+			</table>
+			<!-- <main> element-->
+			<a id="mainTag"><h3 class="tagTitle">The &lt;main&gt; Element</h3></a>
+			<p class='description'>
+				The main tag defines the main content of a document:
+			</p>
+			<!-- Example table -->
+			<table>
+				<tr>
+					<th>Code</th>
+					<th>Result</th>
+				</tr>
+				<tr>
+					<td>
+						<!-- Display HTML code to users -->
+						<section class="code">
+							<code>
+								&lt;html&gt;<br>
+								&lt;body&gt;<br>
+								&lt;main&gt;<br>
+								&lt;h1&gt;Most Popular Video Game Genre&lt;/h1&gt;<br>
+								&lt;p&gt;MMORPG, FPS, and RTS are considered three of the most popular genre in video games nowadays.&lt;p&gt;<br>
+								&lt;article&gt;<br>
+								&lt;h2&gt;1. Massively Multiplayer Online Role Playing Game (MMORPG)&lt;/h3&gt;<br>
+								&lt;p&gt;MMORPG is a genre played online with large numbers of players, where a player creates a personalized character and 
+								assumes their role in a vast interactive world.&lt;p&gt;<br>
+								&lt;/article&gt;<br>
+								&lt;article&gt;<br>
+								&lt;h3&gt;2. Fist Player Shooter (FPS)&lt;/h3&gt;<br>
+								&lt;p&gt;First person shooters are a weapon-based combat game played from the first-person perspective, with a camera focusing 
+								on the weapon.&lt;p&gt;<br>
+								&lt;/article&gt;<br>
+								&lt;article&gt;<br>
+								&lt;h3&gt;3. Real Time Strategy (RTS)&lt;/h3&gt;<br>
+								&lt;p&gt;These games are based around players collecting resources, building units and commanding in-game units into combat.&lt;p&gt;<br>
+								&lt;/article&gt;<br>
+								&lt;a href="https://blog.gfk.com/2013/04/dominant-video-game-genres-why-are-they-so-appealing/" target="_blank"&gt;Article Link&lt;/a&gt;<br>
+								&lt;/main&gt;<br>
+								&lt;/body&gt;<br>
+								&lt;/html&gt;
+							</code>
+						</section>	
+					</td>
+					<td>
+						<!-- Display actual code to screen as example -->
+						<section class="code">
+							<h1>Most Popular Video Game Genre</h1>
+							<p>MMORPG, FPS, and RTS are considered three of the most popular genre in video games nowadays.<p>
+							<article>
+							<h3>1. Massively Multiplayer Online Role Playing Game (MMORPG)</h3>
+							<p>MMORPG is a genre played online with large numbers of players, where a player creates a personalized character and 
+							assumes their role in a vast interactive world.<p>
+							</article>
+							<article>
+							<h3>2. Fist Player Shooter (FPS)</h3>
+							<p>First person shooters are a weapon-based combat game played from the first-person perspective, with a camera focusing 
+							on the weapon.<p>
+							</article>
+							<article>
+							<h3>3. Real Time Strategy (RTS)</h3>
+							<p>These games are based around players collecting resources, building units and commanding in-game units into combat.<p>
+							</article>
+							<a href="https://blog.gfk.com/2013/04/dominant-video-game-genres-why-are-they-so-appealing/"  target="_blank">Article Link</a>
+						</section>
+					</td>
+				</tr>
+			</table>
+			<!-- <nav> element-->
+			<a id="navTag"><h3 class="tagTitle">The &lt;nav&gt; Element</h3></a>
+			<p class='description'>
+				The nav tag allows the user to create a set of navigation links in order to navigate through a page or website:
+			</p>
+			<!-- Example table -->
+			<table>
+				<tr>
+					<th>Code</th>
+					<th>Result</th>
+				</tr>
+				<tr>
+					<td>
+						<!-- Display HTML code to users -->
+						<section class="code">
+							<code>
+								&lt;html&gt;<br>
+								&lt;body&gt;<br>
+								&lt;nav&gt;<br>
+								&lt;a href="#articleTag">&lt;article&gt;&lt;/a&gt; |<br>
+								&lt;a href="#asideTag">&lt;aside&gt;&lt;/a&gt;&gt;&lt;br&gt;<br>
+								&lt;a href="#detailsTag">&lt;details&gt;&lt;/a&gt; |<br>
+								&lt;a href="#figureTag">&lt;figure&gt;&lt;/a&gt;&lt;br&gt;<br>
+								&lt;a href="#figcaptionTag">&lt;figcaption&gt;&lt;/a&gt; |<br>
+								&lt;a href="#footerTag">&lt;footer&gt;&lt;/a&gt;&lt;br&gt;<br>
+								&lt;a href="#headerTag">&lt;header&gt;&lt;/a&gt; |<br>
+								&lt;a href="#mainTag">&lt;main&gt;&lt;/a&gt;&lt;br&gt;<br>
+								&lt;a href="#navTag">&lt;nav&gt;&lt;/a&gt; |<br>
+								&lt;a href="#sectionTag">&lt;section&gt;&lt;/a&gt; &lt;br&gt;<br>
+								&lt;a href="#summeryTag">&lt;summary&gt;&lt;/a&gt; |<br>
+								&lt;a href="#timeTag">&lt;time&gt;&lt;/a&gt;<br>
+								&lt;/nav&gt;<br>
+								&lt;p&gt;Note: Any of these links will bring you its section on the page.&lt;/p&gt;<br>
+								&lt;/body&gt;<br>
+								&lt;/html&gt;
+							</code>
+						</section>	
+					</td>
+					<td>
+						<!-- Display actual code to screen as example -->
+						<section class="code">
+							<a href="#articleTag">&lt;article&gt;</a> |
+							<a href="#asideTag">&lt;aside&gt;</a><br>
+							<a href="#detailsTag">&lt;details&gt;</a> |
+							<a href="#figureTag">&lt;figure&gt;</a><br>
+							<a href="#figcaptionTag">&lt;figcaption&gt;</a> |
+							<a href="#footerTag">&lt;footer&gt;</a><br>
+							<a href="#headerTag">&lt;header&gt;</a> |
+							<a href="#mainTag">&lt;main&gt;</a><br>
+							<a href="#navTag">&lt;nav&gt;</a> |
+							<a href="#sectionTag">&lt;section&gt;</a><br>
+							<a href="#summaryTag">&lt;summary&gt;</a> |
+							<a href="#timeTag">&lt;time&gt;</a>
+							<p>Note: Any of these links will bring you its section on the page.</p>
+						</section>
+					</td>
+				</tr>
+			</table>
+			<!-- <section> element-->
+			<a id="sectionTag"><h3 class="tagTitle">The &lt;section&gt; Element</h3></a>
+			<p class='description'>
+				The section tag divides a document into sections such as chapters, header, footer, etc.. :
+			</p>
+			<!-- Example table -->
+			<table>
+				<tr>
+					<th>Code</th>
+					<th>Result</th>
+				</tr>
+				<tr>
+					<td>
+						<!-- Display HTML code to users -->
+						<section class="code">
+							<code>
+								&lt;html&gt;<br>
+								&lt;body&gt;<br>
+								&lt;section&gt;<br>
+								&lt;h1&gt;First Section&lt;/h1&gt;<br>
+								&lt;p&gt;This is the content of section 1.&lt;/p&gt;<br>
+								&lt;/section&gt;<br>
+								&lt;section&gt;<br>
+								&lt;h1&gt;Second Section&lt;/h1&gt;<br>
+								&lt;p&gt;This is the content of section 2.&lt;/p&gt;<br>
+								&lt;/section&gt;<br>
+								&lt;/body&gt;<br>
+								&lt;/html&gt;
+							</code>
+						</section>	
+					</td>
+					<td>
+						<!-- Display actual code to screen as example -->
+						<section class="code">
+							<section>
+							<h1>First Section</h1>
+							<p>This is the content of section 1.<p>
+							</section>
+							<section>
+							<h1>Second Section</h1>
+							<p>This is the content of section 2.</p>
+							</section>
+						</section>
+					</td>
+				</tr>
+			</table>
+			<!-- <summary> element-->
+			<a id="summaryTag"><h3 class="tagTitle">The &lt;summary&gt; Element</h3></a>
+			<p class='description'>
+				The summary tag defines the visible title of the detail tag which can be seen at all time whether the detail element is opened or closed:
+			</p>
+			<!-- Example table -->
+			<table>
+				<tr>
+					<th>Code</th>
+					<th>Result</th>
+				</tr>
+				<tr>
+					<td>
+						<!-- Display HTML code to users -->
+						<section class="code">
+							<code>
+								&lt;html&gt;<br>
+								&lt;body&gt;<br>
+								&lt;details&gt;<br>
+								&lt;summary&gt;This is the summary tag&lt;/summary&gt;<br>
+								&lt;p&gt;This is the content of the details tag.&lt;/p&gt;<br>
+								&lt;/details&gt;<br>
+								&lt;/body&gt;<br>
+								&lt;/html&gt;
+							</code>
+						</section>	
+					</td>
+					<td>
+						<!-- Display actual code to screen as example -->
+						<section class="code">
+							<details>
+								<summary>This is the summary tag</summary>
+								<p>This is the content of the details tag.</p>
+							</details>
+						</section>
+					</td>
+				</tr>
+			</table>
+			<!-- <time> element-->
+			<a id="timeTag"><h3 class="tagTitle">The &lt;time&gt; Element</h3></a>
+			<p class='description'>
+				The time tag allows the page to display a user-readable time or date:
+			</p>
+			<!-- Example table -->
+			<table>
+				<tr>
+					<th>Code</th>
+					<th>Result</th>
+				</tr>
+				<tr>
+					<td>
+						<!-- Display HTML code to users -->
+						<section class="code">
+							<code>
+								&lt;html&gt;<br>
+								&lt;body&gt;<br>
+								&lt;p&gt;We celebrate &lt;time datetime="2017-12-25 00:00"&gt;Christmas&lt;/time&gt; every year.&lt;/p&gt;<br>
+								&lt;p&gt;I wake up at &lt;time&gt;04:30&lt;/time&gt; every morning to go to work.&lt;/p&gt;<br>
+								&lt;/body&gt;<br>
+								&lt;/html&gt;
+							</code>
+						</section>	
+					</td>
+					<td>
+						<!-- Display actual code to screen as example -->
+						<section class="code">
+							<p>We celebrate <time datetime="2017-12-25 00:00">Christmas</time> every year.</p>
+							<p>I wake up at <time>04:30</time> every morning to go to work.</p>
+						</section>
+					</td>
+				</tr>
+			</table>
+			<!-- Link to the official website -->
+			<p>
+				For more information, visit <a target="_blank" href="https://www.w3schools.com/html/html5_semantic_elements.asp">W3Schools.com</a>
+			</p>
+		</main>
+		<footer>
+			<!-- Author's name and link to college webpage -->
+			<p class='author'> &#x24B8; Dylan Grandjean. March 9th, 2017<br> </p>
+			<p class='college'>
+				<a href="http://www.ccri.edu">Community College of Rhode Island</a><br>
+				400 East Avenue, Warwick, Rhode Island 02886<br>
+				Telephone: <a href="http://ccri.edu/phone/college-depts.html">+1 (401) 825-1000</a>
+			</p>
+		</footer>
+	</body>
+</html>

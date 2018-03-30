@@ -1,0 +1,316 @@
+<!-- Dylan Grandjean - March 8th, 2017 -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Lists Documentation</title>
+		<link href="html_css_docstyle.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<!-- Banner at top of the page. -->
+		<header>
+			<a href="main.html">
+				<section id='banner'>
+					<h1 id='bannerTitle'>HTML5/CSS3 Documentation</h1>
+				</section>
+			</a>
+		</header>
+		<!-- Menu and drop down menus within navigation bar.-->
+		<nav>
+			<form>
+    				<button class="dropbtn" formaction="main.html">Home</button>
+				<section class="dropdown">
+				<!-- Display content of HTML dropdown button -->
+ 				 <button class="dropbtn" formaction="htmldocs.html">HTML</button>
+  					<section class="dropdown-content">
+    						<a href="txtfrmtdocs.html">&lt;Text Formatting&gt;</a>
+    						<a href="semelemdocs.html">&lt;Semantic Elements&gt;</a>
+    						<a href="listdocs.html">&lt;List Elements&gt;</a>
+    						<hr>
+    						<a href="buttondocs.html">&lt;button&gt;</a>
+    						<a href="h1toh6docs.html">&lt;h1-h6&gt;</a>
+    						<a href="imgdocs.html">&lt;img&gt;</a>
+  					</section>
+				</section>
+				<section class="dropdown">
+				<!-- Display content of CSS dropdown button -->
+ 				  <button class="dropbtn" formaction="cssdocs.html">CSS</button>
+  					<section class="dropdown-content">
+    						<a href="colordocs.html">color</a>
+   						 <a href="borderdocs.html">border</a>
+    						<a href="backgrounddocs.html">background</a>
+  					</section>
+				</section>
+				<button class="dropbtn" formaction="mailto:dgrandjean@my.ccri.edu">Contact Us</button>
+			</form>
+		</nav>
+		<!-- Main section of the page where all the relevant information is contained. -->
+		<main>
+			<!-- Page description -->
+			<h2 id='title'>The List Elements</h2>
+			<p>
+				You may want to build lists, numbered or ranked items, or other ordered or unorderd systems. HTML makes it
+				easy to create such documents with the help of list tags.
+			</p>
+			<!-- First example -->
+			<p class='description'>
+				The ol  and ul tags or used to encapsulate list content. ul will create an unordered list whereas ol will give you an ordered one.
+				Within these list, the li tag is used to define elements of the list:
+			</p>
+			<!-- Example table -->
+			<table>
+				<tr>
+					<th>Code</th>
+					<th>Result</th>
+				</tr>
+				<tr>
+					<td>
+						<!-- Display HTML code to users -->
+						<section class="code">
+							<code>
+								&lt;html&gt;<br>
+								&lt;body&gt;<br>
+								&lt;ol&gt;<br>
+								&lt;li&gt;First ordered element&lt;/li&gt;<br>
+								&lt;li&gt;Second ordered element&lt;/li&gt;<br>
+								&lt;li&gt;Third ordered element&lt;/li&gt;<br>
+								&lt;/ol&gt;<br>
+								&lt;ul&gt;<br>
+								&lt;li&gt;First ordered element&lt;/li&gt;<br>
+								&lt;li&gt;Second ordered element&lt;/li&gt;<br>
+								&lt;li&gt;Third ordered element&lt;/li&gt;<br>
+								&lt;/ul&gt;<br>
+								&lt;/body&gt;<br>
+								&lt;/html&gt;
+							</code>
+						</section>	
+					</td>
+					<td>
+						<!-- Display actual code to screen as example -->
+						<section class="code">
+							<ol>
+								<li>First ordered element</li>
+								<li>Second ordered element</li>
+								<li>Third ordered element</li>
+							</ol>
+							<ul>
+								<li>First unordered element</li>
+								<li>Second unordered element</li>
+								<li>Third unordered element</li>
+							</ul>
+						</section>
+					</td>
+				</tr>
+			</table>
+			<!-- Second example -->
+			<p class='description'>
+				<br><br>
+				Furthermore, ordered lists can be customized by using a type attribute:
+			</p>
+			<!-- Example table -->
+			<table>
+				<tr>
+					<th>Code</th>
+					<th>Result</th>
+				</tr>
+				<tr>
+					<td>
+						<!-- Display HTML code to users -->
+						<section class="code">
+							<code>
+								&lt;html&gt;<br>
+								&lt;body&gt;<br>
+								&lt;ol type="1"&gt;<br>
+								&lt;li&gt;First type 1 element&lt;/li&gt;<br>
+								&lt;li&gt;Second type 1 element&lt;/li&gt;<br>
+								&lt;li&gt;Third type 1 element&lt;/li&gt;<br>
+								&lt;/ol&gt;<br>
+								&lt;ol type="A"&gt;<br>
+								&lt;li&gt;First type A element&lt;/li&gt;<br>
+								&lt;li&gt;Second type A element&lt;/li&gt;<br>
+								&lt;li&gt;Third type A element&lt;/li&gt;<br>
+								&lt;/ol&gt;<br>
+								&lt;ol type="a"&gt;<br>
+								&lt;li&gt;First type a element&lt;/li&gt;<br>
+								&lt;li&gt;Second type a element&lt;/li&gt;<br>
+								&lt;li&gt;Third type a element&lt;/li&gt;<br>
+								&lt;/ol&gt;<br>
+								&lt;ol type="I"&gt;<br>
+								&lt;li&gt;First type I element&lt;/li&gt;<br>
+								&lt;li&gt;Second type I element&lt;/li&gt;<br>
+								&lt;li&gt;Third type I element&lt;/li&gt;<br>
+								&lt;/ol&gt;<br>
+								&lt;ol type="i"&gt;<br>
+								&lt;li&gt;First type i element&lt;/li&gt;<br>
+								&lt;li&gt;Second type i element&lt;/li&gt;<br>
+								&lt;li&gt;Third type i element&lt;/li&gt;<br>
+								&lt;/ol&gt;<br>
+								&lt;/body&gt;<br>
+								&lt;/html&gt;
+							</code>
+						</section>	
+					</td>
+					<td>
+						<!-- Display actual code to screen as example -->
+						<section class="code">
+							<ol type="1">
+								<li>First type 1 element</li>
+								<li>Second type 1 element</li>
+								<li>Third type 1 element</li>
+							</ol>
+							<ol type="A">
+								<li>First type A element</li>
+								<li>Second type A element</li>
+								<li>Third type A element</li>
+							</ol>
+							<ol type="a">
+								<li>First type a element</li>
+								<li>Second type a element</li>
+								<li>Third type a element</li>
+							</ol>
+							<ol type="I">
+								<li>First type I element</li>
+								<li>Second type I element</li>
+								<li>Third type I element</li>
+							</ol>
+							<ol type="i">
+								<li>First type i element</li>
+								<li>Second type i element</li>
+								<li>Third type i element</li>
+							</ol>
+						</section>
+					</td>
+				</tr>
+			</table>
+			<!-- Third example -->
+			<p class='description'>
+				<br><br>
+				The dl tag defines a description list. Each element of the list contains a title (dt) and its description (dd):
+			</p>
+			<!-- Example table -->
+			<table>
+				<tr>
+					<th>Code</th>
+					<th>Result</th>
+				</tr>
+				<tr>
+					<td>
+						<!-- Display HTML code to users -->
+						<section class="code">
+							<code>
+								&lt;html&gt;<br>
+								&lt;body&gt;<br>
+								&lt;dl&gt;<br>
+								&lt;dt&gt;Eggs&lt;/dt&gt;<br>
+								&lt;dd&gt;- 2 twelve packs&lt;/dd&gt;<br>
+								&lt;dt&gt;Milk&lt;/dt&gt;<br>
+								&lt;dd&gt;- 1 gallon&lt;/dd&gt;<br>
+								&lt;dt&gt;Pizza&lt;/dt&gt;<br>
+								&lt;dd&gt;- as many as I can afford&lt;/dd&gt;<br>
+								&lt;/dl&gt;<br>
+								&lt;/body&gt;<br>
+								&lt;/html&gt;
+							</code>
+						</section>	
+					</td>
+					<td>
+						<!-- Display actual code to screen as example -->
+						<section class="code">
+							<dl>
+								<dt>Eggs</dt>
+								<dd>- 2 twelve packs</dd>
+								<dt>Milk</dt>
+								<dd>- 1 gallon</dd>
+								<dt>Pizza</dt>
+								<dd>- as many as I can afford</dd>
+							</dl>
+						</section>
+					</td>
+				</tr>
+			</table>
+			<!-- Four example -->
+			<p class='description'>
+				<br><br>
+				Thanks to CSS list-style-type, it is possible to change the style of an unordered list's markers:
+			</p>
+			<!-- Example table -->
+			<table>
+				<tr>
+					<th>Code</th>
+					<th>Result</th>
+				</tr>
+				<tr>
+					<td>
+						<!-- Display HTML code to users -->
+						<section class="code">
+							<code>
+								&lt;html&gt;<br>
+								&lt;body&gt;<br>
+								&lt;ul style="list-style-type:disc"&gt;<br>
+								&lt;li&gt;First disc element&lt;/li&gt;<br>
+								&lt;li&gt;Second disc element&lt;/li&gt;<br>
+								&lt;li&gt;Third disc element&lt;/li&gt;<br>
+								&lt;/ul&gt;<br>
+								&lt;ul style="list-style-type:circle"&gt;<br>
+								&lt;li&gt;First disc element&lt;/li&gt;<br>
+								&lt;li&gt;Second disc element&lt;/li&gt;<br>
+								&lt;li&gt;Third disc element&lt;/li&gt;<br>
+								&lt;/ul&gt;<br>
+								&lt;ul style="list-style-type:square"&gt;<br>
+								&lt;li&gt;First square element&lt;/li&gt;<br>
+								&lt;li&gt;Second square element&lt;/li&gt;<br>
+								&lt;li&gt;Third square element&lt;/li&gt;<br>
+								&lt;/ul&gt;<br>
+								&lt;ul style="list-style-type:none"&gt;<br>
+								&lt;li&gt;First none element&lt;/li&gt;<br>
+								&lt;li&gt;Second none element&lt;/li&gt;<br>
+								&lt;li&gt;Third none element&lt;/li&gt;<br>
+								&lt;/ul&gt;<br>
+								&lt;/body&gt;<br>
+								&lt;/html&gt;
+							</code>
+						</section>	
+					</td>
+					<td>
+						<!-- Display actual code to screen as example -->
+						<section class="code">
+							<ul style="list-style-type:disc">
+								<li>First disc element</li>
+								<li>Second disc element</li>
+								<li>Third disc element</li>
+							</ul>
+							<ul style="list-style-type:circle">
+								<li>First circle element</li>
+								<li>Second circle element</li>
+								<li>Third circle element</li>
+							</ul>
+							<ul style="list-style-type:square">
+								<li>First square element</li>
+								<li>Second square element</li>
+								<li>Third square element</li>
+							</ul>
+							<ul style="list-style-type:none">
+								<li>First none element</li>
+								<li>Second none element</li>
+								<li>Third none element</li>
+							</ul>
+						</section>
+					</td>
+				</tr>
+			</table>
+			<!-- Link to the official website -->
+			<p>
+				For more information, visit <a target="_blank" href="https://www.w3schools.com/html/html_lists.asp">W3Schools.com</a>
+			</p>
+		</main>
+		<footer>
+			<!-- Author's name and link to college webpage -->
+			<p class='author'> &#x24B8; Dylan Grandjean. March 9th, 2017<br> </p>
+			<p class='college'>
+				<a href="http://www.ccri.edu">Community College of Rhode Island</a><br>
+				400 East Avenue, Warwick, Rhode Island 02886<br>
+				Telephone: <a href="http://ccri.edu/phone/college-depts.html">+1 (401) 825-1000</a>
+			</p>
+		</footer>
+	</body>
+</html>

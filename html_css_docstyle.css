@@ -1,0 +1,178 @@
+/* Dylan Grandjean | March 8th, 2017 */
+
+/*----BANNER----*/
+/*Sets header's width.*/
+header {width: 100%;}
+/*Creates and sets a banner for the top of the page and navigation bar.*/
+#banner {
+    background-image:url('bannerImg.png');
+    height: 200px;
+    border-radius: 8px;
+    position: relative;
+}
+/*Displays website title on top of the banner.*/
+#bannerTitle {
+	position: absolute;
+	top: 50px;
+	text-align: center;
+	min-width: 1100px;
+	font-family: "Rockwell";
+	font-size: 50px;
+	color: rgb(200,200,200);
+}
+
+
+/*----MENU BAR----*/
+/*Positions menu elements*/
+nav {
+	position: absolute;
+	top: 170px;
+	left: 200px;
+}
+/*Define aesthetic settings for menu button*/
+.dropbtn {
+    background-color: black;
+    color: rgb(200,200,200);
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+/*Position dropdown list under button.*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+/*Hides the dropdown list by default until button is hovered.*/
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    font-size: 12px;
+    min-width: 160px;
+    box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.7);
+    z-index: 1;
+}
+/*Define look of links within the dropdown*/
+.dropdown-content a {
+    display: block;
+    color: rgb(200,200,200);
+    padding: 12px 16px;
+    text-decoration: none;
+}
+/* Change the color of links on hover, display menu on hover, and change background color when links are visible*/
+.dropdown-content a:hover {background-color: #3B99D3}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn, .dropbtn:hover {background-color: #F16528;}
+
+
+/*----BODY---*/
+/*Set background color for page.*/
+body {background-color: rgb(200,200,200);}
+/*Sets main background.*/
+main {
+	background-color: white;
+	border-radius: 10px;
+	padding: 20px;
+	box-shadow: 0px 10px 100px black;
+}
+/*Paragraph formatting.*/
+main p {max-width: 800px;}
+/*Underline title and subtitle of each page.*/
+#title, #subtitle {text-decoration: underline;}
+/*Formats links within link lists.*/
+#linkList a {color: black; text-decoration: none;}
+#linkList a:hover {color:#F16528; text-decoration: underline;}
+#linkList a:active {color:#3B99D3; text-decoration: underline;}
+/*Formats table and its elements.*/
+table {
+	width: 100%;
+	max-width: 800px;
+	border-radius: 10px;
+	border: 1px solid black;
+	padding: 10px;
+	background-color: rgb(240,240,240);
+	table-layout: fixed;
+}
+/*Format table cell.*/
+th, td {min-width: 300px; max-width: 300px; max-height: 600px; white-space: nowrap; padding: 5px;}
+td + td { border-left:1px solid black; }
+/*Set style for descriptive text.*/
+.description {
+	font-size: 15px;
+	font-style: italic;
+	font-weight: bold;
+}
+/*Center button within the table and allow scrolling on cells*/
+.example {text-align: center;}
+.code {overflow: auto; max-height: 600px;}
+/*Fix h1 header in order to preserve its size in the h1-h2 example.*/
+#sectionHeader {font-size: 200%;}
+/*Set image size of <img> element page.*/
+img {height: 100px; width: 100px;}
+/*Format appearance of navigation elements and titles on pages with multiple tags.*/
+#idNav a {color: black; text-decoration: none;}
+#idNav a:hover {color:#F16528;}
+#idNav a:active {color:#3B99D3;}
+.tagTitle {text-decoration: underline; padding-top: 30px;}
+/*Color properties for the CSS color properties page.*/
+#exampleHeader { color: green;}
+#examplePar { color: #DC143C}
+/*Border properties for the border property examples.*/
+/*Example 1.*/
+.exNone {border-style: none;}
+.exHidden {border-style: hidden;}
+.exDotted {border-style: dotted;}
+.exDashed {border-style: dashed;}
+.exDouble {border-style: double;}
+.exGroove {border-style: groove;}
+.exRidge {border-style: ridge;}
+.exInset {border-style: inset;}
+.exOutset {border-style: outset;}
+.exSolid {border-style: solid;}
+/*Example 2.*/
+.exOne {border-style: dotted; border-width: 5px;}
+.exTwo {border-style: double; border-width: 2ch;}
+.exThree {border-style: dashed; border-width: thick;}
+.exFour {border-style: inset; border-width: 5em;}
+/*Example 3.*/
+.exBlueDot {border-style: dotted; border-color: blue;}
+.exRedDash {border-style: dashed; border-color: #FF0000;}
+.exGreenSolid {border-style: solid; border-color: rgb(107, 244, 66);}
+.exYellowOutset {border-style: outset; border-color: hsl(50, 100%, 63%);}
+/*Example 4.*/
+.exFirst {border-left: 5px solid blue; background-color: lightblue;}
+.exSecond {border-top: 10px dotted red; background-color: lightpink;}
+.exThird {border-right: 10px double green; background-color: lightgreen;}
+.exFourth {border-bottom: 1em dashed yellow; background-color: lightyellow;}
+/*Example 5.*/
+.exSquare {border: 3px solid blue;}
+.exRound {border: 3px solid blue; border-radius: 5px;}
+.exRounder {border: 3px solid blue; border-radius: 8px;}
+.exRoundest {border: 3px solid blue; border-radius: 12px;}
+/*Example 6.*/
+.exMix {
+	border-style: dotted dashed double solid; 
+	border-width: 2px 5px 10px 15px; 
+	border-color: blue green yellow red;
+	border-radius: 8px;
+}
+/*Background properties for the background property examples.*/
+.backgroundColorExample {background-color: lightpink;}
+.backgroundImageExample {background-image: url("flowerImg.jpg");}
+.backgroundRepeatExample {height: 600px; background-image: url("gradient.png");}
+.backgroundRepeatXExample {height: 600px; background-image: url("gradient.png"); background-repeat: repeat-x;}
+
+
+/*----FOOTER----*/
+/*Set footer style.*/
+footer {font-size: 12px;}
+p.author {font-weight: bold;}
+p.college {text-align: center;}
+/*Format hyperlinks for footer only.*/
+p.college a {color: black;}
+p.college a:hover {color:#F16528;}
+p.college a:active {color:#3B99D3;}

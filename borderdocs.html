@@ -1,0 +1,351 @@
+<!-- Dylan Grandjean - March 8th, 2017 -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>border Documentation</title>
+		<link href="html_css_docstyle.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<!-- Banner at top of the page. -->
+		<header>
+			<a href="main.html">
+				<section id='banner'>
+					<h1 id='bannerTitle'>HTML5/CSS3 Documentation</h1>
+				</section>
+			</a>
+		</header>
+		<!-- Menu and drop down menus within navigation bar.-->
+		<nav>
+			<form>
+    				<button class="dropbtn" formaction="main.html">Home</button>
+				<section class="dropdown">
+				<!-- Display content of HTML dropdown button -->
+ 				 <button class="dropbtn" formaction="htmldocs.html">HTML</button>
+  					<section class="dropdown-content">
+    						<a href="txtfrmtdocs.html">&lt;Text Formatting&gt;</a>
+    						<a href="semelemdocs.html">&lt;Semantic Elements&gt;</a>
+    						<a href="listdocs.html">&lt;List Elements&gt;</a>
+    						<hr>
+    						<a href="buttondocs.html">&lt;button&gt;</a>
+    						<a href="h1toh6docs.html">&lt;h1-h6&gt;</a>
+    						<a href="imgdocs.html">&lt;img&gt;</a>
+  					</section>
+				</section>
+				<section class="dropdown">
+				<!-- Display content of CSS dropdown button -->
+ 				  <button class="dropbtn" formaction="cssdocs.html">CSS</button>
+  					<section class="dropdown-content">
+    						<a href="colordocs.html">color</a>
+   						 <a href="borderdocs.html">border</a>
+    						<a href="backgrounddocs.html">background</a>
+  					</section>
+				</section>
+				<button class="dropbtn" formaction="mailto:dgrandjean@my.ccri.edu">Contact Us</button>
+			</form>
+		</nav>
+		<!-- Main section of the page where all the relevant information is contained. -->
+		<main>
+			<!-- Page description -->
+			<h2 id='title'>The border Property</h2>
+			<p>
+				The border property allows a user to create frames around content. These frames can be further decorated and formatted in order to give each page
+				their unique look and feel. It is recommended to keep CSS and HTML codes in seperate files, however, in this example, the CSS portion will be 
+				displayed within a &lt;style&gt; tag:
+			<!-- First example -->
+			<p class='description'>
+				Borders come in all shape, each of them can be defined through a CSS property:
+			</p>
+			<!-- Example table -->
+			<table>
+				<tr>
+					<th>Code</th>
+					<th>Result</th>
+				</tr>
+				<tr>
+					<td>
+						<!-- Display HTML code to users -->
+						<section class="code">
+							<code>
+								&lt;html&gt;<br>
+								&lt;body&gt;<br>
+								&lt;p class="none"&gt;This text has no border.&lt;/p&gt;<br>
+								&lt;p class="hidden"&gt;This text has a hidden border.&lt;/p&gt;<br>
+								&lt;p class="dotted"&gt;This test has a dotted border.&lt;/p&gt;<br>
+								&lt;p class="dashed"&gt;This test has a dashed border.&lt;/p&gt;<br>
+								&lt;p class="double"&gt;This test has a double border.&lt;/p&gt;<br>
+								&lt;p class="groove"&gt;This test has a groove border.&lt;/p&gt;<br>
+								&lt;p class="ridge"&gt;This test has a ridge border.&lt;/p&gt;<br>
+								&lt;p class="inset"&gt;This test has an inset border.&lt;/p&gt;<br>
+								&lt;p class="outset"&gt;This test has an outset border.&lt;/p&gt;<br>
+								&lt;p class="solid"&gt;This test has a solid border.&lt;/p&gt;<br>
+								&lt;/body&gt;<br>
+								&lt;style&gt;<br>
+								p.none {border-style: none;}<br>
+								p.hidden {border-style: hidden;}<br>
+								p.dotted {border-style: dotted;}<br>
+								p.dashed {border-style: dashed;}<br>
+								p.double {border-style: double;}<br>
+								p.groove {border-style: groove;}<br>
+								p.ridge {border-style: ridge;}<br>
+								p.inset {border-style: inset;}<br>
+								p.outset {border-style: outset;}<br>
+								p.solid {border-style: solid;}<br>
+								&lt;/style&gt;<br>
+								&lt;/html&gt;
+							</code>
+						</section>
+					</td>
+					<td>
+						<!-- Display actual code to screen as example -->
+						<section class="code">
+							<p class="exNone">This text has no border.</p>
+							<p class="exHidden">This text has a hidden border.</p>
+							<p class="exDotted">This text has a dotted border.</p>
+							<p class="exDashed">This text has a dashed border.</p>
+							<p class="exDouble">This text has a double border.</p>
+							<p class="exDouble">This text has a double border.</p>
+							<p class="exGroove">This text has a groove border.</p>
+							<p class="exRidge">This text has a ridge border.</p>
+							<p class="exInset">This text has an inset border.</p>
+							<p class="exOutset">This text has an outset border.</p>
+							<p class="exSolid">This text has a solid border.</p>
+						</section>
+					</td>
+				</tr>
+			</table>
+			<!-- Second example -->
+			<p class='description'>
+				<br><br>
+				Just like fonts, borders have widths which can be modified:
+			</p>
+			<!-- Example table -->
+			<table>
+				<tr>
+					<th>Code</th>
+					<th>Result</th>
+				</tr>
+				<tr>
+					<td>
+						<!-- Display HTML code to users -->
+						<section class="code">
+							<code>
+								&lt;html&gt;<br>
+								&lt;body&gt;<br>
+								&lt;p class="one"&gt;This text has some meaning.&lt;/p&gt;<br>
+								&lt;p class="two"&gt;This text has some meaning.&lt;/p&gt;<br>
+								&lt;p class="three"&gt;This text has some meaning.&lt;/p&gt;<br>
+								&lt;p class="four"&gt;This text has some meaning.&lt;/p&gt;<br>
+								&lt;/body&gt;<br>
+								&lt;style&gt;<br>
+								p.one {border-style: dotted; border-width: 5px;}<br>
+								p.two {border-style: double; border-width: 2ch;}<br>
+								p.three {border-style: dashed; border-width: thick;}<br>
+								p.four {border-style: inset; border-width: 5em;}<br>
+								&lt;/style&gt;<br>
+								&lt;/html&gt;
+							</code>
+						</section>
+					</td>
+					<td>
+						<!-- Display actual code to screen as example -->
+						<section class="code">
+							<p class="exOne">This text has some meaning.</p>
+							<p class="exTwo">This text has some meaning.</p>
+							<p class="exThree">This text has some meaning.</p>
+							<p class="exFour">This text has some meaning.</p>
+						</section>
+					</td>
+				</tr>
+			</table>
+			<!-- Third example -->
+			<p class='description'>
+				<br><br>
+				Life isn't all black and white. Luckily, CSS allows the addition of colors to borders as well in order to create
+				vivid and lively elements which will breath life into a page:
+			</p>
+			<!-- Example table -->
+			<table>
+				<tr>
+					<th>Code</th>
+					<th>Result</th>
+				</tr>
+				<tr>
+					<td>
+						<!-- Display HTML code to users -->
+						<section class="code">
+							<code>
+								&lt;html&gt;<br>
+								&lt;body&gt;<br>
+								&lt;p class="blueDot"&gt;This is a calming blue border.&lt;/p&gt;<br>
+								&lt;p class="redDash"&gt;This is an aggressive red border.&lt;/p&gt;<br>
+								&lt;p class="greenSolid"&gt;This is a bright green border.&lt;/p&gt;<br>
+								&lt;p class="yellowOutset"&gt;This is a sunny yellow border.&lt;/p&gt;<br>
+								&lt;/body&gt;<br>
+								&lt;style&gt;<br>
+								p.blueDot {border-style: dotted; border-color: blue;}<br>
+								p.redDash {border-style: dashed; border-color: #FF0000;}<br>
+								p.greenSolid {border-style: solid; border-color: rgb(107, 244, 66);}<br>
+								p.yellowOutset {border-style: outset; border-color: hsl(50, 100%, 63%);}<br>
+								&lt;/style&gt;<br>
+								&lt;/html&gt;
+							</code>
+						</section>
+					</td>
+					<td>
+						<!-- Display actual code to screen as example -->
+						<section class="code">
+							<p class="exBlueDot">This is a calming blue border.</p>
+							<p class="exRedDash">This is an aggressive red border.</p>
+							<p class="exGreenSolid">This is a bright green border.</p>
+							<p class="exYellowOutset">This is a sunny yellow border.</p>
+						</section>
+					</td>
+				</tr>
+			</table>
+			<!-- Four example -->
+			<p class='description'>
+				<br><br>
+				Border can be further customized by creating single bordered text. When defining a border's property for one side only,
+				the width, style, and color can be defined within the same property:
+			</p>
+			<!-- Example table -->
+			<table>
+				<tr>
+					<th>Code</th>
+					<th>Result</th>
+				</tr>
+				<tr>
+					<td>
+						<!-- Display HTML code to users -->
+						<section class="code">
+							<code>
+								&lt;html&gt;<br>
+								&lt;body&gt;<br>
+								&lt;p class="first"&gt;This is a calming blue border.&lt;/p&gt;<br>
+								&lt;p class="second"&gt;This is an aggressive red border.&lt;/p&gt;<br>
+								&lt;p class="third"&gt;This is a bright green border.&lt;/p&gt;<br>
+								&lt;p class="fourth"&gt;This is a sunny yellow border.&lt;/p&gt;<br>
+								&lt;/body&gt;<br>
+								&lt;style&gt;<br>
+								p.first {border-left: 5px solid blue; background-color: lightblue;}<br>
+								p.second {border-top: 10px dotted red; background-color: lightpink;}<br>
+								p.third {border-right: 10px double green; background-color: lightgreen;}<br>
+								p.fourth {border-bottom: 1em dashed yellow; background-color: lightyellow;}<br>
+								&lt;/style&gt;<br>
+								&lt;/html&gt;
+							</code>
+						</section>
+					</td>
+					<td>
+						<!-- Display actual code to screen as example -->
+						<section class="code">
+							<p class="exFirst">This is a calming blue border.</p>
+							<p class="exSecond">This is an aggressive red border.</p>
+							<p class="exThird">This is a bright green border.</p>
+							<p class="exFourth">This is a sunny yellow border.</p>
+						</section>
+					</td>
+				</tr>
+			</table>
+			<!-- Fifth example -->
+			<p class='description'>
+				<br><br>
+				If square isn't your type, it is possible to round up borders as well by using the border-radius property:
+			</p>
+			<!-- Example table -->
+			<table>
+				<tr>
+					<th>Code</th>
+					<th>Result</th>
+				</tr>
+				<tr>
+					<td>
+						<!-- Display HTML code to users -->
+						<section class="code">
+							<code>
+								&lt;html&gt;<br>
+								&lt;body&gt;<br>
+								&lt;p class="square"&gt;This is a rectangular border.&lt;/p&gt;<br>
+								&lt;p class="round"&gt;This is a slightly rounder border.&lt;/p&gt;<br>
+								&lt;p class="rounder"&gt;This is a rounder border.&lt;/p&gt;<br>
+								&lt;p class="roundest"&gt;This is the roundest border.&lt;/p&gt;<br>
+								&lt;/body&gt;<br>
+								&lt;style&gt;<br>
+								p.square {border: 5px solid blue;}<br>
+								p.round {border: 5px solid blue; border-radius: 5px;}<br>
+								p.rounder {border: 5px solid blue; border-radius: 8px;}<br>
+								p.roundest {border: 5px solid blue; border-radius: 12px;}<br>
+								&lt;/style&gt;<br>
+								&lt;/html&gt;
+							</code>
+						</section>
+					</td>
+					<td>
+						<!-- Display actual code to screen as example -->
+						<section class="code">
+							<p class="exSquare">This is a rectangular border.</p>
+							<p class="exRound">This is a slightly rounder border.</p>
+							<p class="exRounder">This is a rounder border.</p>
+							<p class="exRoundest">This is the roundest border.</p>
+						</section>
+					</td>
+				</tr>
+			</table>
+			<!-- Sixth example -->
+			<p class='description'>
+				<br><br>
+				With all the elements discussed on this page, it is easy to believe everything was covered, however, it is possible to mix these
+				properties in order to give your borders unforgettable and trully personal styles:
+			</p>
+			<!-- Example table -->
+			<table>
+				<tr>
+					<th>Code</th>
+					<th>Result</th>
+				</tr>
+				<tr>
+					<td>
+						<!-- Display HTML code to users -->
+						<section class="code">
+							<code>
+								&lt;html&gt;<br>
+								&lt;body&gt;<br>
+								&lt;p class="mix"&gt;This is one crazy border!&lt;/p&gt;<br>
+								&lt;/body&gt;<br>
+								&lt;style&gt;<br>
+								p.mix {<br>
+								border-style: dotted dashed double solid;<br>
+								border-width: 2px 5px 10px 15px;<br>
+								border-color: blue green yellow red<br>
+								border-radius: 8px;<br>
+								}<br>
+								&lt;/style&gt;<br>
+								&lt;/html&gt;
+							</code>
+						</section>
+					</td>
+					<td>
+						<!-- Display actual code to screen as example -->
+						<section class="code">
+							<p class="exMix">This is one crazy border!</p>
+						</section>
+					</td>
+				</tr>
+			</table>
+			<!-- Link to the official website -->
+			<p>
+				For more information, visit <a target="_blank" href="https://www.w3schools.com/css/css_border.asp">W3Schools.com</a>
+			</p>
+		</main>
+		<footer>
+			<!-- Author's name and link to college webpage -->
+			<p class='author'> &#x24B8; Dylan Grandjean. March 9th, 2017<br> </p>
+			<p class='college'>
+				<a href="http://www.ccri.edu">Community College of Rhode Island</a><br>
+				400 East Avenue, Warwick, Rhode Island 02886<br>
+				Telephone: <a href="http://ccri.edu/phone/college-depts.html">+1 (401) 825-1000</a>
+			</p>
+		</footer>
+	</body>
+</html>

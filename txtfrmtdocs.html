@@ -1,0 +1,408 @@
+<!-- Dylan Grandjean - March 8th, 2017 -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Text Formatting Documentation</title>
+		<link href="html_css_docstyle.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<!-- Banner at top of the page. -->
+		<header>
+			<a href="main.html">
+				<section id='banner'>
+					<h1 id='bannerTitle'>HTML5/CSS3 Documentation</h1>
+				</section>
+			</a>
+		</header>
+		<!-- Menu and drop down menus within navigation bar.-->
+		<nav>
+			<form>
+    				<button class="dropbtn" formaction="main.html">Home</button>
+				<section class="dropdown">
+				<!-- Display content of HTML dropdown button -->
+ 				 <button class="dropbtn" formaction="htmldocs.html">HTML</button>
+  					<section class="dropdown-content">
+    						<a href="txtfrmtdocs.html">&lt;Text Formatting&gt;</a>
+    						<a href="semelemdocs.html">&lt;Semantic Elements&gt;</a>
+    						<a href="listdocs.html">&lt;List Elements&gt;</a>
+    						<hr>
+    						<a href="buttondocs.html">&lt;button&gt;</a>
+    						<a href="h1toh6docs.html">&lt;h1-h6&gt;</a>
+    						<a href="imgdocs.html">&lt;img&gt;</a>
+  					</section>
+				</section>
+				<section class="dropdown">
+				<!-- Display content of CSS dropdown button -->
+ 				  <button class="dropbtn" formaction="cssdocs.html">CSS</button>
+  					<section class="dropdown-content">
+    						<a href="colordocs.html">color</a>
+   						 <a href="borderdocs.html">border</a>
+    						<a href="backgrounddocs.html">background</a>
+  					</section>
+				</section>
+				<button class="dropbtn" formaction="mailto:dgrandjean@my.ccri.edu">Contact Us</button>
+			</form>
+		</nav>
+		<!-- Main section of the page where all the relevant information is contained. -->
+		<main>
+			<!-- Page description -->
+			<h2 id='title'>The Text Formatting Elements</h2>
+			<p>
+				Text elements are tags which format the text they surround in order to give them an importance or meaning. Select
+				one of the tags hereunder in order to be directed to its section.
+			</p>
+			<!-- Allows user to navigate to an element on this page. -->
+			<section id="idNav">
+				<a href="#bTag">&lt;b&gt;</a> |
+				<a href="#strongTag">&lt;strong&gt;</a> |
+				<a href="#iTag">&lt;i&gt;</a> |
+				<a href="#emTag">&lt;em&gt;</a> |
+				<a href="#markTag">&lt;mark&gt;</a> |
+				<a href="#smallTag">&lt;small&gt;</a> |
+				<a href="#delTag">&lt;del&gt;</a> |
+				<a href="#insTag">&lt;ins&gt;</a> |
+				<a href="#subTag">&lt;sub&gt;</a> |
+				<a href="#supTag">&lt;sup&gt;</a>
+				<hr>
+			</section>
+			<!-- <b> element-->
+			<a id="bTag"><h3 class="tagTitle">The &lt;b&gt; Element</h3></a>
+			<p class='description'>
+				The bold tag increases the font's weight of the element within it:
+			</p>
+			<!-- Example table -->
+			<table>
+				<tr>
+					<th>Code</th>
+					<th>Result</th>
+				</tr>
+				<tr>
+					<td>
+						<!-- Display HTML code to users -->
+						<section class="code">
+							<code>
+								&lt;html&gt;<br>
+								&lt;body&gt;<br>
+								&lt;p&gt;This is a &lt;b&gt;bold text&lt;/b&gt;&lt;/p&gt;<br>
+								&lt;/body&gt;<br>
+								&lt;/html&gt;
+							</code>
+						</section>	
+					</td>
+					<td>
+						<!-- Display actual code to screen as example -->
+						<section class="code">
+							<p>This is a <b>bold text.</b></p>
+						</section>
+					</td>
+				</tr>
+			</table>
+			<!-- <strong> element-->
+			<a id="strongTag"><h3 class="tagTitle">The &lt;strong&gt; Element</h3></a>
+			<p class='description'>
+				The strong tag increases the font's weight as well, however, there is a sense of importance to the targeted
+				words when this tag is used:
+			</p>
+			<!-- Example table -->
+			<table>
+				<tr>
+					<th>Code</th>
+					<th>Result</th>
+				</tr>
+				<tr>
+					<td>
+						<!-- Display HTML code to users -->
+						<section class="code">
+							<code>
+								&lt;html&gt;<br>
+								&lt;body&gt;<br>
+								&lt;p&gt;This is a &lt;strong&gt;strong text.&lt;/strong&gt;&lt;/p&gt;<br>
+								&lt;/body&gt;<br>
+								&lt;/html&gt;
+							</code>
+						</section>	
+					</td>
+					<td>
+						<!-- Display actual code to screen as example -->
+						<section class="code">
+							<p>This is a <strong>strong text.</strong></p>
+						</section>
+					</td>
+				</tr>
+			</table>
+			<!-- <i> element-->
+			<a id="iTag"><h3 class="tagTitle">The &lt;i&gt; Element</h3></a>
+			<p class='description'>
+				The i tag is used to set a diferent mood to the words within it. It can be used for side notes, quotes, names, sentences in different 
+				languages, etc.. :
+			</p>
+			<!-- Example table -->
+			<table>
+				<tr>
+					<th>Code</th>
+					<th>Result</th>
+				</tr>
+				<tr>
+					<td>
+						<!-- Display HTML code to users -->
+						<section class="code">
+							<code>
+								&lt;html&gt;<br>
+								&lt;body&gt;<br>
+								&lt;p&gt;This is an &lt;i&gt;italic text.&lt;/i&gt;&lt;/p&gt;<br>
+								&lt;/body&gt;<br>
+								&lt;/html&gt;
+							</code>
+						</section>	
+					</td>
+					<td>
+						<!-- Display actual code to screen as example -->
+						<section class="code">
+							<p>This is an <i>italic text.</i></p>
+						</section>
+					</td>
+				</tr>
+			</table>
+			<!-- <em> element-->
+			<a id="emTag"><h3 class="tagTitle">The &lt;em&gt; Element</h3></a>
+			<p class='description'>
+				The em tag looks similar to italicized text, however, unlike the i tag, it is used to emphasize its content and give it importance
+				over the rest of the text:
+			</p>
+			<!-- Example table -->
+			<table>
+				<tr>
+					<th>Code</th>
+					<th>Result</th>
+				</tr>
+				<tr>
+					<td>
+						<!-- Display HTML code to users -->
+						<section class="code">
+							<code>
+								&lt;html&gt;<br>
+								&lt;body&gt;<br>
+								&lt;p&gt;This is an &lt;em&gt;emphasized text.&lt;/em&gt;&lt;/p&gt;<br>
+								&lt;/body&gt;<br>
+								&lt;/html&gt;
+							</code>
+						</section>	
+					</td>
+					<td>
+						<!-- Display actual code to screen as example -->
+						<section class="code">
+							<p>This is an <em>emphasized text.</em></p>
+						</section>
+					</td>
+				</tr>
+			</table>
+			<!-- <mark> element-->
+			<a id="markTag"><h3 class="tagTitle">The &lt;mark&gt; Element</h3></a>
+			<p class='description'>
+				The mark tag defines a highlighted portion of text which allows the element within the tag to stand out to the reader:
+			</p>
+			<!-- Example table -->
+			<table>
+				<tr>
+					<th>Code</th>
+					<th>Result</th>
+				</tr>
+				<tr>
+					<td>
+						<!-- Display HTML code to users -->
+						<section class="code">
+							<code>
+								&lt;html&gt;<br>
+								&lt;body&gt;<br>
+								&lt;p&gt;This is a &lt;mark&gt;marked text.&lt;/mark&gt;&lt;/p&gt;<br>
+								&lt;/body&gt;<br>
+								&lt;/html&gt;
+							</code>
+						</section>	
+					</td>
+					<td>
+						<!-- Display actual code to screen as example -->
+						<section class="code">
+							<p>This is a <mark>marked text.</mark></p>
+						</section>
+					</td>
+				</tr>
+			</table>
+			<!-- <small> element-->
+			<a id="smallTag"><h3 class="tagTitle">The &lt;small&gt; Element</h3></a>
+			<p class='description'>
+				The small tag decreases the font's size. It is often used for side text or footer content:
+			</p>
+			<!-- Example table -->
+			<table>
+				<tr>
+					<th>Code</th>
+					<th>Result</th>
+				</tr>
+				<tr>
+					<td>
+						<!-- Display HTML code to users -->
+						<section class="code">
+							<code>
+								&lt;html&gt;<br>
+								&lt;body&gt;<br>
+								&lt;p&gt;This is a &lt;small&gt;small text.&lt;/small&gt;&lt;/p&gt;<br>
+								&lt;/body&gt;<br>
+								&lt;/html&gt;
+							</code>
+						</section>	
+					</td>
+					<td>
+						<!-- Display actual code to screen as example -->
+						<section class="code">
+							<p>This is a <small>small text.</small></p>
+						</section>
+					</td>
+				</tr>
+			</table>
+			<!-- <del> element-->
+			<a id="delTag"><h3 class="tagTitle">The &lt;del&gt; Element</h3></a>
+			<p class='description'>
+				The del tag defines deleted text:
+			</p>
+			<!-- Example table -->
+			<table>
+				<tr>
+					<th>Code</th>
+					<th>Result</th>
+				</tr>
+				<tr>
+					<td>
+						<!-- Display HTML code to users -->
+						<section class="code">
+							<code>
+								&lt;html&gt;<br>
+								&lt;body&gt;<br>
+								&lt;p&gt;This is a &lt;del&gt;deleted text.&lt;/del&gt;&lt;/p&gt;<br>
+								&lt;/body&gt;<br>
+								&lt;/html&gt;
+							</code>
+						</section>	
+					</td>
+					<td>
+						<!-- Display actual code to screen as example -->
+						<section class="code">
+							<p>This is a <del>deleted text.</del></p>
+						</section>
+					</td>
+				</tr>
+			</table>
+			<!-- <ins> element-->
+			<a id="insTag"><h3 class="tagTitle">The &lt;ins&gt; Element</h3></a>
+			<p class='description'>
+				The ins tag defines a portion of text that was inserted and underlines it. This tag is often used along with the del tag in order to insert a new entry
+				after a deleted one:
+			</p>
+			<!-- Example table -->
+			<table>
+				<tr>
+					<th>Code</th>
+					<th>Result</th>
+				</tr>
+				<tr>
+					<td>
+						<!-- Display HTML code to users -->
+						<section class="code">
+							<code>
+								&lt;html&gt;<br>
+								&lt;body&gt;<br>
+								&lt;p&gt;This is a &lt;del&gt;deleted&lt;/del&gt; &lt;ins&gt;inserted&lt;/ins&gt; text.&lt;/p&gt;<br>
+								&lt;/body&gt;<br>
+								&lt;/html&gt;
+							</code>
+						</section>	
+					</td>
+					<td>
+						<!-- Display actual code to screen as example -->
+						<section class="code">
+							<p>This is a <del>deleted</del> <ins>inserted</ins> text.</p>
+						</section>
+					</td>
+				</tr>
+			</table>
+			<!-- <sub> element-->
+			<a id="subTag"><h3 class="tagTitle">The &lt;sub&gt; Element</h3></a>
+			<p class='description'>
+				The sub tag is used to display smaller characters half a character lower than regular text. It is often use in mathematics and chemistry in order to display subscripts:
+			</p>
+			<!-- Example table -->
+			<table>
+				<tr>
+					<th>Code</th>
+					<th>Result</th>
+				</tr>
+				<tr>
+					<td>
+						<!-- Display HTML code to users -->
+						<section class="code">
+							<code>
+								&lt;html&gt;<br>
+								&lt;body&gt;<br>
+								&lt;p&gt;This is a &lt;sub&gt;subscripted text.&lt;/sub&gt;&lt;/p&gt;<br>
+								&lt;/body&gt;<br>
+								&lt;/html&gt;
+							</code>
+						</section>	
+					</td>
+					<td>
+						<!-- Display actual code to screen as example -->
+						<section class="code">
+							<p>This is a <sub>subscripted text.</sub></p>
+						</section>
+					</td>
+				</tr>
+			</table>
+			<!-- <sup> element-->
+			<a id="supTag"><h3 class="tagTitle">The &lt;sup&gt; Element</h3></a>
+			<p class='description'>
+				The sup tag, as oposed to the sub tag, will display the characters half a character above the text. It is often used for mathematical formulas and footnotes :
+			</p>
+			<!-- Example table -->
+			<table>
+				<tr>
+					<th>Code</th>
+					<th>Result</th>
+				</tr>
+				<tr>
+					<td>
+						<!-- Display HTML code to users -->
+						<section class="code">
+							<code>
+								&lt;html&gt;<br>
+								&lt;body&gt;<br>
+								&lt;p&gt;This is a &lt;sup&gt;superscripted text.&lt;/sup&gt;&lt;/p&gt;<br>
+								&lt;/body&gt;<br>
+								&lt;/html&gt;
+							</code>
+						</section>	
+					</td>
+					<td>
+						<!-- Display actual code to screen as example -->
+						<section class="code">
+							<p>This is a <sup>superscripted text.</sup></p>
+						</section>
+					</td>
+				</tr>
+			</table>
+			<!-- Link to the official website -->
+			<p>
+				For more information, visit <a target="_blank" href="https://www.w3schools.com/html/html_formatting.asp">W3Schools.com</a>
+			</p>
+		</main>
+		<footer>
+			<!-- Author's name and link to college webpage -->
+			<p class='author'> &#x24B8; Dylan Grandjean. March 9th, 2017<br> </p>
+			<p class='college'>
+				<a href="http://www.ccri.edu">Community College of Rhode Island</a><br>
+				400 East Avenue, Warwick, Rhode Island 02886<br>
+				Telephone: <a href="http://ccri.edu/phone/college-depts.html">+1 (401) 825-1000</a>
+			</p>
+		</footer>
+	</body>
+</html>
